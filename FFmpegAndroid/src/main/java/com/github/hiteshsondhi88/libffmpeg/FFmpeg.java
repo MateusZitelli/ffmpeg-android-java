@@ -21,12 +21,11 @@ public class FFmpeg implements FFmpegInterface {
 
     private static FFmpeg instance = null;
 
-    public FFmpeg(FFmpegContextProvider contextProvider) {
+    private FFmpeg(FFmpegContextProvider contextProvider) {
         this.context = contextProvider;
         Log.setDEBUG(Util.isDebug(this.context.provide()));
     }
 
-    @Deprecated
     public static FFmpeg getInstance(FFmpegContextProvider contextProvider) {
         if (instance == null) {
             instance = new FFmpeg(contextProvider);
