@@ -62,7 +62,6 @@ For examples and usage instructions head over to:
 ## Supported Architecture
 * armv7
 * armv7-neon
-* x86
 
 ## Sample
 ![http://i.imgur.com/cP4WhLn.gif](http://i.imgur.com/cP4WhLn.gif)
